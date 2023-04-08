@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    /* text-align: center; */
+}
+
+.d-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 10px 14px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #ff7a57;
+    border-color: #ff7a57;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #ff5c31;
+    border-color: #ff5224;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-dark:hover {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+
+.section-title {
+    text-align: center;
+}
+
+.section-title .subtitle {
+    opacity: 40%;
+    font-size: 18px;
+}
+
+.section-title .title {
+    opacity: 70%;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/* ------------------------ */
+
+nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0px;
+    box-shadow: 0 3px 8px 5px rgba(128, 128, 128, 0.1);
+    z-index: 999;
+}
+
+nav .d-flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .d-flex .logo {
+    width: fit-content;
+}
+
+nav .d-flex .logo i {
+    display: none;
+    font-size: 25px;
+    border: 1px solid lightgrey;
+    height: fit-content;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: grey;
+}
+
+nav .d-flex .logo img {
+    width: 75px;
+}
+
+
+
+
+nav .d-flex .menu ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    display: inline-flex;
+}
+
+nav .d-flex .menu ul li a {
+    text-transform: capitalize;
+    margin: 0px 20px;
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .d-flex .menu ul li a:hover:not(.active) {
+    color: black;
+}
+
+
+
+nav .d-flex .menu ul li .active {
+    color: #ff7a57;
+}
+
+nav .d-flex .menu a {
+    margin-left: 15px;
+    text-transform: capitalize;
+}
+
+/* ----------------------------------------------------0000 */
+/* main */
+main {
+    padding-top: 70px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dee2e6;
+}
+
+main .container {
+    height: 100%;
+}
+
+main .d-flex {
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+main .d-flex .left .subtitle,
+main .d-flex .left .title,
+main .d-flex .left .jobtitle {
+    color: black;
+    opacity: 70%;
+}
+
+main .d-flex .left .subtitle,
+main .d-flex .left .jobtitle {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+main .d-flex .left .title {
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+main .d-flex .left .main-btns {
+    margin: 20px 0px;
+}
+
+main .d-flex .left .main-btns button {
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+main .d-flex .left .icons a {
+    text-decoration: none;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ff7a57;
+    color: #ff7a57;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+main .d-flex .left .icons a:hover {
+    color: white;
+    background-color: #ff7a57;
+}
+
+
+main .d-flex img {
+    width: 620px;
+    align-self: flex-end;
+}
+
+/* ----------------------------------------------------------- */
+
+.widget {
+    margin: auto;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px 1px rgba(22, 40, 141, 0.3);
+    transform: translateY(-50%);
+}
+
+.widget div {
+    width: 30%;
+    text-align: center;
+}
+
+.widget .child:not(:last-of-type) {
+    border-right: 1px solid #dee2e6;
+}
+
+
+
+/* ---------------------------------------------------- */
+.service .flex-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.service .flex-box .col {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+.service .flex-box .col .data i {
+    color: #ff7a57;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.service .flex-box .col .data p {
+    opacity: 70%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.service .flex-box .col:hover {
+    background-color: #ff7a57;
+    border: 1px solid #ff7a57;
+
+}
+
+.service .flex-box .col:hover .data i,
+.service .flex-box .col:hover .data p {
+    color: #fff;
+}
+
+
+
+
+/* ----------------------------------------- */
+
+.Portfolio .flex-box {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+
+
+.Portfolio .flex-box .col .img {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.Portfolio .flex-box .col .img .absolute {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 121, 87, 0.5);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: top 0.5s ease-out;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.Portfolio .flex-box .col .img .absolute .none {
+    text-align: center;
+}
+
+.Portfolio .flex-box .col .img .absolute p {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.Portfolio .flex-box .col .img .absolute i {
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+}
+
+.Portfolio .flex-box .col .img .absolute i:hover {
+    background-color: white;
+    color: #ff7a57;
+}
+
+
+
+
+.Portfolio .flex-box .col .img:hover .absolute {
+    top: 0;
+}
+
+.Portfolio .flex-box .col .img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* xl */
+@media screen and (min-width:1200px) {
+    main {
+        height: 95vh;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    main .d-flex img {
+        width: 620px;
+    }
+
+    .widget {
+        width: 40%;
+    }
+
+    .Portfolio .flex-box .col {
+        width: 30%;
+    }
+
+    .service .flex-box .col {
+        width: 24%;
+    }
+}
+
+/* l */
+@media screen and (min-width:992px) and (max-width:1200px) {
+    main {
+        height: 95vh;
+    }
+
+    .container {
+        width: 75%;
+    }
+
+    .widget {
+        width: 60%;
+    }
+
+    main .d-flex img {
+        width: 500px;
+    }
+
+    .Portfolio .flex-box .col {
+        width: 30%;
+    }
+
+    .service .flex-box .col {
+        width: 24%;
+    }
+}
+
+/* m */
+@media screen and (min-width:768px) and (max-width:992px) {
+    main {
+        height: 95vh;
+    }
+
+
+    .container {
+        width: 80%;
+    }
+
+    .widget {
+        width: 80%;
+    }
+
+    main .d-flex .left {
+        width: 100%;
+    }
+
+    main .d-flex img {
+        display: none;
+    }
+
+    nav {
+        padding-bottom: 20px;
+    }
+
+    nav .d-flex {
+        flex-direction: column;
+    }
+
+    nav .d-flex .menu {
+        display: none;
+    }
+
+    nav .d-flex .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .d-flex .logo i {
+        display: block;
+    }
+
+    nav .d-flex .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    nav .d-flex .menu ul li {
+        margin: 10px 0px;
+        border-bottom: 1px solid grey;
+
+
+    }
+
+    .Portfolio .flex-box .col {
+        width: 48%;
+    }
+
+    .service .flex-box .col {
+        width: 30%;
+    }
+
+
+}
+
+/* s */
+@media screen and (min-width:600px) and (max-width:768px) {
+    main {
+        padding: 100px 0;
+    }
+
+
+    .container {
+        width: 85%;
+    }
+
+    .widget {
+        width: 90%;
+    }
+
+    main .d-flex .left {
+        width: 100%;
+    }
+
+    main .d-flex img {
+        display: none;
+    }
+
+    nav {
+        padding-bottom: 20px;
+    }
+
+    nav .d-flex {
+        flex-direction: column;
+    }
+
+    nav .d-flex .menu {
+        display: none;
+    }
+
+    nav .d-flex .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .d-flex .logo i {
+        display: block;
+    }
+
+    nav .d-flex .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    nav .d-flex .menu ul li {
+        margin: 10px 0px;
+        border-bottom: 1px solid grey;
+
+
+    }
+
+    .Portfolio .flex-box .col {
+        width: 100%;
+    }
+
+    .service .flex-box .col {
+        width: 48%;
+    }
+
+
+}
+
+/* xs */
+
+@media screen and (max-width:600px) {
+    main {
+        padding: 100px 0;
+    }
+
+    .container {
+        width: 90%;
+
+    }
+
+    .widget {
+        width: 90%;
+    }
+
+    main .d-flex .left {
+        width: 100%;
+    }
+
+    main .d-flex img {
+        display: none;
+    }
+
+    nav {
+        padding-bottom: 20px;
+    }
+
+    nav .d-flex {
+        flex-direction: column;
+    }
+
+    nav .d-flex .menu {
+        display: none;
+    }
+
+    nav .d-flex .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .d-flex .logo i {
+        display: block;
+    }
+
+    nav .d-flex .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    nav .d-flex .menu ul li {
+        margin: 10px 0px;
+        border-bottom: 1px solid grey;
+
+
+    }
+
+    .Portfolio .flex-box .col {
+        width: 100%;
+    }
+
+    .service .flex-box .col {
+        width: 100%;
+    }
+
+
+}
